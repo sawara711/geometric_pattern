@@ -1,0 +1,96 @@
+.main-part{
+  padding-top: 5vw;
+  width: 100vw;
+  height: 800px;
+  background-color: #f7edde;
+}
+
+/*// キャンバス部分 //*/
+.canvas-container{
+  margin: auto;
+  width: 510px;
+  height: 610px;
+}
+/* キャンバス */
+canvas {
+  border: 3px solid #aba29d; /* Optional: Just to visualize the canvas boundary */
+  border-radius: 5px;
+}
+/* ツール配置 */
+.drawing-tools{
+  color: #fff;
+}
+.drawing-tool-list, .colors {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+/* お絵描きツールボタン */
+button {
+  padding: 8px 11px;
+  /*マウスの形変更*/
+  cursor: pointer;
+  background-color: #3e7390;
+  border-radius: 10px;
+  /*font*/
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+button:hover{
+  background: #4ab8b4;
+}
+/* 色ボタン */
+.color-btn {
+  padding: 10px 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+/* 各色 */
+.color-btn.darkblue {
+  background-color: #011e41;
+}
+.color-btn.pink {
+  background-color: #f39bd5;
+}
+.color-btn.yellow {
+  background-color: #f3eb84;
+}
+.color-btn.purple {
+  background-color: #7275d5;
+}
+.color-btn.sky {
+  background-color: #89dcf0;
+}
+.color-btn.bluegreen {
+  background-color: #2a5e4c;
+}
+
+
+/*// その他部分 //*/
+.info-container{
+  margin: auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+/* title */
+.items-text {
+  display: block;
+  width: calc(100% - 70px);
+  height: 40px;
+  margin-right: 10px;
+  padding: auto;
+  border-radius: 5px;
+  border: 1px solid #aba29d;
+  font-size: 12px;
+  /* resize: none; */
+}
+/* 保存 */
+.save-btn{
+  display: block;
+  width: 70px;
+  height: 40px;
+}
