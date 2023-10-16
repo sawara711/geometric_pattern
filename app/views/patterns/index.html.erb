@@ -1,0 +1,22 @@
+
+<%# 一覧 %>
+<div class='pattarn-lists-container'>
+  <div class='title'>lists</div>
+
+  <ul class='pattarn-lists'>
+    <% @patterns.each do |pattern| %>
+        <li class='list'>
+            <div class='pattern-img-content'>
+              <%= image_tag pattern.picture, class: "pattern-img" %>
+            </div>
+            <div class='pattern-name'><%#= pattern.title %></div>
+        </li>
+    <% end %>
+  </ul>
+
+</div>
+
+<%# 作成ボタン %>
+<%= link_to(new_pattern_path, data: { turbo: false }, class: 'create-btn') do %>
+  <%= image_tag '万年筆の無料アイコン素材.png' , size: '50x50' ,class: "create-btn-icon" %>
+<% end %>
