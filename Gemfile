@@ -86,3 +86,6 @@ gem 'image_processing', '~> 1.2'
 
 # ページネーション機能導入
 gem 'kaminari'
+
+# アプリ名変更機能導入
+gem 'rename'

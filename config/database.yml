@@ -19,14 +19,14 @@ default: &default
 
 development:
   <<: *default
-  database: geometric_pattern_development
+  database: pattern_drawing_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: geometric_pattern_test
+  database: pattern_drawing_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: geometric_pattern_production
-  username: geometric_pattern
-  password: <%= ENV["GEOMETRIC_PATTERN_DATABASE_PASSWORD"] %>
+  database: pattern_drawing_production
+  username: pattern_drawing
+  password: <%= ENV["pattern_drawing_DATABASE_PASSWORD"] %>
